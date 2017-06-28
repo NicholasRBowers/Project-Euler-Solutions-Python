@@ -11,7 +11,7 @@ import time
 # This function sums the multiples of factors, f, below some limit, n.
 def sum_divisibles(n, *f):          # Accepts many factors as input.
     sum = 0                         # Variable to keep track of the sum.
-    for i in range(1, n):          # Iterate through to the limit.
+    for i in range(1, n):           # Iterate through to the limit.
         for j in f:                 # Iterate through the factors.
             if i % j == 0:          # If the current number we're checking is evenly divisible by any of our factors.
                 sum += i            # Add the number to the sum.
