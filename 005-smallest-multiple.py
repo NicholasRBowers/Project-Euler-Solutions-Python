@@ -1,4 +1,4 @@
-#!/usr/bin/pythonw
+#!/usr/bin/python3
 
 """
 2520 is the smallest number that can be divided by each of the numbers from 1 to 10 without any remainder.
@@ -35,7 +35,7 @@ def evenly_divisible(n):                                                # Accept
         primes = prime_factors(n)                                       # Import all of the prime factors for the upper bound.
         for i in primes:                                                # Iterate through all of the prime factors for the upper bound.
             if primes.count(i) > factors.count(i):                      # If # of a specific factor is greater than the # of that factor we have stored,
-                for j in xrange(0, primes.count(i) - factors.count(i)): # Repeat the next step the (difference between the counts) times.
+                for j in range(0, primes.count(i) - factors.count(i)):  # Repeat the next step the (difference between the counts) times.
                     factors.append(i)                                   # Store this factor to our factor list.
         n -= 1                                                          # Decrement our number by 1.
     product = 1                                                         # Create a variable which will store our product.
@@ -45,6 +45,6 @@ def evenly_divisible(n):                                                # Accept
 
 #print evenly_divisible(10)
 s = time.time()
-print evenly_divisible(20)
+print(evenly_divisible(20))
 f = time.time()
-print f - s
+print(f - s)

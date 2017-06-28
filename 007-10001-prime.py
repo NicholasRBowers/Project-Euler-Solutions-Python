@@ -1,4 +1,4 @@
-#!/usr/bin/pythonw
+#!/usr/bin/python3
 
 """
 By listing the first six prime numbers: 2, 3, 5, 7, 11, and 13, we can see that the 6th prime is 13.
@@ -30,6 +30,6 @@ def prime(n):                   # Accepts an integer, n, which tells the functio
 
 #print prime(6)
 s = time.time()
-print prime(10001)
+print(prime(10001))
 f = time.time()
-print f - s
+print(f - s)

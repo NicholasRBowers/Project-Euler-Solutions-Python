@@ -1,4 +1,4 @@
-#!/usr/bin/pythonw
+#!/usr/bin/python3
 
 """
 The prime factors of 13195 are 5, 7, 13 and 29.
@@ -22,6 +22,6 @@ def largest_prime_factor(n):        # Accepts a number, n, for which the largest
 
 #print largest_prime_factor(13195)
 s = time.time()
-print largest_prime_factor(600851475143)
+print(largest_prime_factor(600851475143))
 f = time.time()
-print f - s
+print(f - s)

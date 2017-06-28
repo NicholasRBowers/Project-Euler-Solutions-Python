@@ -1,4 +1,4 @@
-#!/usr/bin/pythonw
+#!/usr/bin/python3
 
 """
 A palindromic number reads the same both ways. The largest palindrome made from the product of two 2-digit numbers is 9009 = 91 x 99.
@@ -32,6 +32,6 @@ def largest_palindrome(n):                          # Accepts an integer, n, whi
 
 #print largest_palindrome(2)
 s = time.time()
-print largest_palindrome(3)
+print(largest_palindrome(3))
 f = time.time()
-print f - s
+print(f - s)

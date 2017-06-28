@@ -1,4 +1,4 @@
-#!/usr/bin/pythonw
+#!/usr/bin/python3
 
 """
 Find the greatest product of five consecutive digits in the 1000-digit number.
@@ -38,7 +38,7 @@ def largest_product(n, m):                              # Accepts two integers: 
     for i in n:                                         # Iterate through our list of consecutive numbers.
         product = 1                                     # Create a variable to hold the current product.
         matrix = []                                     # Create an empty matrix which will serve as a sliding window of m length.
-        for j in xrange(m):                             # Repeat m times.
+        for j in range(m):                             # Repeat m times.
             matrix.append(i[j])                         # Append the first five members of the current string to our sliding window.
             product *= int(i[j])                        # And calculate the initial product for these five integers.
         k = m                                           # Create a counter variable which marks the ending of our sliding window.
@@ -56,6 +56,6 @@ def largest_product(n, m):                              # Accepts two integers: 
     return largest_product                              # Return the largest product.
 
 s = time.time()
-print largest_product(number, 5)
+print(largest_product(number, 5))
 f = time.time()
-print f - s
+print(f - s)

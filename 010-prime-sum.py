@@ -1,4 +1,4 @@
-#!/usr/bin/pythonw
+#!/usr/bin/python3
 
 """
 The sum of the primes below 10 is 2 + 3 + 5 + 7 = 17.
@@ -32,6 +32,6 @@ def sum_primes_under(n):        # Accepts an integer, n.
 
 #print sum_primes_under(10)
 s = time.time()
-print sum_primes_under(2000000)
+print(sum_primes_under(2000000))
 f = time.time()
-print f - s
+print(f - s)
